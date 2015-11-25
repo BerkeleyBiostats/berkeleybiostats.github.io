@@ -56,16 +56,15 @@
 	  </div>
 	  <div class="content">
 	<div class='article'>
-		<div class="page-header"><h1>subsemble R Package</h1></div>
-		<div class="well small">Permalink: <a class="more" href="/subsemble-r-package.html">2015-11-22 22:41:00-08:00</a>
+		<div class="page-header"><h1>TargetedLearning Julia Package</h1></div>
+		<div class="well small">Permalink: <a class="more" href="/targetedlearning-julia-package.html">2015-11-22 22:41:00-08:00</a>
 by <a class="url fn" href="/author/admin.html">admin </a>
  in <a href="/category/software.html">Software</a>
-tags: <a href="/tag/r.html">R</a> <a href="/tag/ensemble-learning.html">ensemble learning</a> <a href="/tag/machine-learning.html">machine learning</a> </div>
-		<div><p>The <a href="https://github.com/ledell/subsemble">subsemble</a> package is an R implementation of the Subsemble algorithm. Subsemble is a general subset ensemble prediction method, which can be used for small, moderate, or large datasets. </p>
-<p>Subsemble partitions the full dataset into subsets of observations, fits a specified underlying algorithm on each subset, and uses a unique form of k-fold cross-validation to output a prediction function that combines the subset-specific fits. An oracle result provides a theoretical performance guarantee for Subsemble.</p>
-<p>The subsemble package also provides an implementation of the Super Learner ensemble algorithm.</p>
-<p><strong>Author(s)</strong>: Erin LeDell, Stephanie Sapp, Mark van der Laan</p>
-<p><a href="https://github.com/ledell/subsemble">GitHub</a> | <a href="https://cran.r-project.org/web/packages/subsemble/index.html">CRAN</a> </p></div>
+tags: <a href="/tag/julia.html">Julia</a> <a href="/tag/machine-learning.html">machine learning</a> <a href="/tag/online-learning.html">online learning</a> <a href="/tag/mini-batch.html">mini-batch</a> </div>
+		<div><p>Targeted minimum loss-based estimation (TMLE) (sometimes targeted maximum likelihood estimation) is a general framework for constructing regular, asymptotically linear estimators for pathwise differentiable parameters with additional properties such as asymptotic efficiency and double robustness. For background and details, see Targeted Learning by van der Laan and Rose, or articles on TMLE.</p>
+<p>The <a href="https://github.com/lendle/TargetedLearning.jl">TargetedLearning.jl</a>  is a package for Julia v0.4.x that implements a TMLE and collaborative TMLE (CTMLE) to estimate a handful of statistical parameters. In particular, we can currently estimate the (statistical parameter corresponding to the) counterfactual mean of some outcome under a static or dynamic single time point treatment with baseline covariates or the difference in counterfactual means. Additionally, arbitrary transformations of these parameters can be estimated, and inference is performed automatically. With a little massaging, the functionality of this package can also be used to estimate the mean of an outcome subject to missingness.</p>
+<p><strong>Author(s)</strong>: Sam Lendle, Mark van der Laan</p>
+<p><a href="https://github.com/lendle/TargetedLearning.jl">GitHub</a> | <a href="https://lendle.github.io/TargetedLearning.jl/">Website</a></p></div>
 	</div>
 		<footer>
 		  <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme based on <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>.</p>
