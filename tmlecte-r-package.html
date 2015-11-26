@@ -42,8 +42,7 @@
 		<div class="well">
 			<h3>Blogroll</h3>
 			<ul>
-				<li><a href="http://getpelican.com/">Pelican</a></li>
-				<li><a href="http://python.org/">Python.org</a></li>
+				<li><a href="http://biostats.bepress.com/ucbbiostat/">U.C. Berkeley Division of Biostatistics Working Paper Series</a></li>
 			</ul>
 			<div class="social">
 			<h3>Social</h3>
@@ -56,16 +55,18 @@
 	  </div>
 	  <div class="content">
 	<div class='article'>
-		<div class="page-header"><h1>KernSmooth Julia Package</h1></div>
-		<div class="well small">Permalink: <a class="more" href="/kernsmooth-julia-package.html">2015-11-22 22:41:00-08:00</a>
+		<div class="page-header"><h1>tmlecte R Package</h1></div>
+		<div class="well small">Permalink: <a class="more" href="/tmlecte-r-package.html">2015-11-22 22:41:00-08:00</a>
 by <a class="url fn" href="/author/admin.html">admin </a>
  in <a href="/category/software.html">Software</a>
-tags: <a href="/tag/julia.html">Julia</a> <a href="/tag/statistics.html">statistics</a> <a href="/tag/regression.html">regression</a> </div>
-		<div><p>The <a href="https://github.com/lendle/KernSmooth.jl">KernSmooth Julia package</a> is a partial port of the <a href="https://cran.r-project.org/web/packages/KernSmooth/index.html">KernSmooth R package</a>, (v2.23-10.) </p>
-<p>Currently the <code>locpoly</code> and <code>dpill</code> functions are ported. <code>locpoly</code> uses local polynomials to estimate pdf of a single variable or a regression function for two variables, or their derivatives. <code>dpill</code> provides a method to select a bandwidth for local linear regression.</p>
-<p>Other functionality provided by the R package but not ported to KernSmooth.jl pertains to univariate and bivariate kernel density estimation. Univariate and bivariate kernel density estimation is provided by the kde function in <a href="https://github.com/JuliaStats/StatsBase.jl/">StatsBase.jl</a>.</p>
+tags: <a href="/tag/r.html">R</a> <a href="/tag/tmle.html">TMLE</a> </div>
+		<div><p>This <a href="https://github.com/lendle/tmlecte">tmlecte R package</a> estimates the statistical parameter <code>E(E(Y|A=1,B)-E(Y|A=0,B)|A=a)</code> using targeted maximum likelihood estimation (TMLE). If <code>A</code> is a treatment, then this is sort of like a Treatment Effect, Conditional on one of the treatments, hence the name <code>tmlecte</code>. Under various causal models, this statistical parameter has interpretations of things like
+- the affect of treatment among the treated (ATT)
+- the natural direct effect (NDE), and
+- the natural direct effect among the untreated.</p>
+<p>The methods in this package will probably be added to the <a href="http://cran.r-project.org/web/packages/tmle/index.html">tmle</a> package on CRAN in the future. </p>
 <p><strong>Author(s)</strong>: Sam Lendle</p>
-<p><a href="https://github.com/lendle/KernSmooth.jl">GitHub</a></p></div>
+<p><a href="https://github.com/lendle/tmlecte">GitHub</a></p></div>
 	</div>
 		<footer>
 		  <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme based on <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>.</p>
